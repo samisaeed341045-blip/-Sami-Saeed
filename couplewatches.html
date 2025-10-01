@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <style>
+    .carousel-img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Timekeeper Kingdom</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">All Watches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kidswatches.html">Kids Watches</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="menwatches.html">Men Watches</a></li>
+              <li><a class="dropdown-item" href="womenwatches.html">Women Watches</a></li>
+              <li><a class="dropdown-item" href="couplewatches.html">Couple Watches</a></li>
+              <li><a class="dropdown-item disabled" aria-disabled="true">CheckOut</a></li>
+              
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item disabled" aria-disabled="true">Thank You</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- COROUSEL -->
+
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpin5d6nhMMfNOAM1o-qMRJwgY4gsmVyQPaA&s"
+          class="d-block w-100 carousel-img " alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuSapdXbeD3v06-8vTZtIOvbLbTNC4-MAYeg&s"
+          class="d-block w-100 carousel-img" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyKe6zzkZJra5TrR0BvyuDtVmf1t46HGEL1g&s"
+          class="d-block w-100 carousel-img " alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<br>
+<br>
+
+
+
+<h1 class="text-center p-3 py-5">Couple Watches</h1>
+
+<div class="container-fluid mt-5">
+<div class="row" id="couplelisting">
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+
+<script>
+
+var products =[
+    {
+"SKUID":4,
+"name":"Crown Collection",
+"desc":"A Crown Collection is a portable timekeeping Analog,Quartz and Time display device that can be worn on the wrist or carried in a pocket.Its used to display time and sometime date." ,
+"price":6200,
+"image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDi7y8tIpIHgHqXP_IaOdE7Y35S_dDC8pbvg&s",
+"category":"couple"
+  },
+
+   {
+"SKUID":5,
+"name":"Zeal Watches",
+"desc":"A Zeal Watches is a portable timekeeping Analog,Quartz and Time display device that can be worn on the wrist or carried in a pocket.Its used to display time and sometime date." ,
+"price":5000,
+"image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyqqriRAz9sLjwdiDLFy69E5HlVc_66czk8A&s",
+"category":"couple"
+  },
+{
+"SKUID":24,
+"name":"Omega",
+"desc":"A omega is a portable timekeeping Analog,Quartz and digital Time display device that can be worn on the wrist or carried in a pocket and Its used to display time and sometime date." ,
+"price":2700,
+"image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxyraaAA8JzjeRigyJfzEuRU8x4MKlKu2S7A&s" ,
+"category":"women"
+  },
+    
+  {
+"SKUID":28,
+"name":"Citizen",
+"desc":"A citizen is a portable timekeeping Analog,Quartz and  Time display device that can be worn on the wrist or carried in a pocket and its use to display time and sometime date." ,
+"price":7000,
+"image":"data:image/jpeg;base64,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",
+"category":"couple"
+  },
+  
+  {
+"SKUID":29,
+"name":"Forever Ticks",
+"desc":"A forever ticks is a portable timekeeping Analog,Quartz and digital Time display device that can be worn on the wrist or carried in a pocket.Its used to display time and sometime date." ,
+"price":6000,
+"image":"data:image/jpeg;base64,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",
+"category":"couple"
+  },
+  
+  {
+"SKUID":30,
+"name":"His & Hers Hours",
+"desc":"A his and hers hours is a portable timekeeping Analog,Quartz and digital Time display device that can be worn on the wrist and  .Its used to display time and sometime date." ,
+"price":3000,
+"image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdbi8MweZB-v6LABSl6ZiRTf8eoSw2ypQgTA&s",
+"category":"couple"
+  },
+  
+  {
+"SKUID":31,
+"name":"Bonded Moments",
+"desc":"A bonded moments is portable timekeeping Analog,Quartz,Time display device that can be worn on the wrist,carried in a pocket " ,
+"price":9000,
+"image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST8_jLpO_QkQIWT9j3lDuwbLGaYkJ4qTB4lA&s",
+"category":"couple"
+  },
+
+]
+// GET PRODUCT LISTING
+
+document.getElementById("couplelisting")
+
+var structure = "";
+
+for (const element of products){
+
+structure +=`
+
+<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+
+  <div class="card" style="width: 18rem;">
+<img src="${element.image}" class="card-img-top img-fluid" alt="">
+<div class="card-body">
+<h5 class="card-title">${element.name}</h5>
+<p class="card-text">${element.desc}</p>
+<p class="card-text">${element.price}</p>
+ <a href="checkout.html?product=Elegant Watch&price=2400" class="btn btn-primary">Buy Now</a>
+
+</div>
+  </div>
+</div>
+
+`;
+
+
+}
+
+document.getElementById("couplelisting").innerHTML = structure
+
+
+</script>
+
+
+</body>
+
+</html>
