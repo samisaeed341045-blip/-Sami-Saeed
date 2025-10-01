@@ -100,8 +100,8 @@
 <br>
   <!-- CARDS -->
 <h1 class="text-center p-3 py-5">All Watches</h1>
-  <div class="container-fluid">
-    <div class="row" id="productlisting">
+  <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100">
+    <div class="row g-3" id="productlisting">
      
 
 </div>
@@ -529,16 +529,16 @@ for (const element of products){
 
 structure +=`
 
-<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+<div class="col-md-4">
 
-  <div class="card" style="width: 18rem;">
+  <div class="card p-3" style="width: 18rem;">
     
 <img src="${element.image}" class="card-img-top img-fluid" alt="">
 
 <div class="card-body">
 <h5 class="card-title">${element.name}</h5>
 <p class="card-text">${element.desc}</p>
-<p class="card-text">RS.${element.price}</p>
+<p class="card-text">$${element.price}</p>
  <a href="checkout.html?,thankyou.html?product=Elegant Watch&price=2400" class="btn btn-primary">Buy Now</a>
 
 </div>
@@ -556,5 +556,6 @@ document.getElementById("productlisting").innerHTML = structure
 </script>
 
 </body>
+
 
 </html>
